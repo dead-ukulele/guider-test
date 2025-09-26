@@ -10,10 +10,10 @@ export type BooksDto =  {
 export const validate = (res: BooksDto[]) => {
 
     for (const book of res) {
-        if (!book.title || !book.author || !book.date || !book.price || !book.id) {
+        if (!book.title || !book.author || !book.date || !book.price || !book.id || !book.tags) {
             console.error('Invalid book data:', book);
         }
     }
-   return  res.filter(book => book.title && book.author && book.date && book.price && book.id)
+   return  res.filter(book => book.title && book.author && book.date && book.price && book.id && book.tags)
 }
 
