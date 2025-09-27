@@ -11,7 +11,7 @@ type LayoutProps = {
 
 export default function Layout({ children, books, filteredBooks }: LayoutProps) {
     return (
-        <div className="flex flex-col h-full md:min-h-screen border-x-[#758693] border-x-2 md:rounded-3xl">
+        <div className="flex flex-col h-full md:min-h-screen  border-x-[#758693] border-x-2 md:rounded-3xl">
             <header className="flex-shrink-0">
                 <div className="max-w-2xl mx-auto">
                     <h1 className="text-xl font-bold md:rounded-t-2xl rounded-none xs:p-4 p-1 text-[#FFF8F3] bg-[#758693]">
@@ -23,7 +23,7 @@ export default function Layout({ children, books, filteredBooks }: LayoutProps) 
                 </div>
             </header>
 
-            <main className="flex-1 overflow-y-auto bg-[#758693]">
+            <main className="flex-1 overflow-y-auto bg-[#758693] min-w-screen sm:min-w-fit">
                 <div className="max-w-2xl mx-auto">
                     {children}
                 </div>

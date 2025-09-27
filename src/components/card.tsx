@@ -14,7 +14,7 @@ export default function Card({title, author, date, price, id, tags}: CardProps) 
     const dispatch = useDispatch()
 
     return (
-        <div className="flex flex-col bg-[#405D724D] rounded-2xl text-left text-[#FFF8F3] h-full">
+        <div className="flex flex-col bg-[#405D724D] rounded-2xl text-left text-[#FFF8F3] h-full min-w-[310px] sm:min-w-[476px]">
             <div className='flex flex-col p-2 md:p-4 flex-1'>
                 <h1 className="text-base sm:text-lg md:text-xl font-semibold mb-2">
                     <span className={'mr-2 text-lg sm:text-xl md:text-2xl font-bold'}>{id}</span>

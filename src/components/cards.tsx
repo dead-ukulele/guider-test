@@ -8,7 +8,7 @@ type CardProps = {
 
 export default function Cards({books}: CardProps) {
    return (
-        <div className="flex flex-col gap-5 p-6 min-w-[476px] ">
+        <div className="flex flex-col gap-5 p-2 sm:p-6">
         {books.length>0 && books?.map((book) => (
             <Card
                 key={book.id}
